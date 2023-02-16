@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - A c programming that prints the standared error
- * coded by Kindinew
- * Return: 1 (success)
+ * main - A c programming that prints the standared errorw
+ * Return 1 (success)
  */
 
 int main(void)
 {
-write(2, "and that piece of art is useful" - Dora Korpar, 2015 - 10 - 19\n", 59);
+	fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19/n*, stdout);
 return (1);
 }
