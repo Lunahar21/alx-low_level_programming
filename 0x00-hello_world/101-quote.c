@@ -1,7 +1,7 @@
 #include <unistd.h>
 /**
  * main - A c programming that prints a line to the standard error
- *Code by Yohannes
+ *Code by kin
  * Return: 1 (success)
 */
 
