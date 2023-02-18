@@ -2,30 +2,23 @@
 #include <stdlib.h>
 /**
  * main - entry point
- * description print all possible combination of single digit numbers
+ * description print all possible combination of a single digit numbers
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int c = '0';
 	int i;
 
-	while (c <= '9')
+	for (i = 0; i < 10; i++)
 	{
-		i = c + 1;
-		while (i <= '9')
+		putchar(i + '0');
+		if (i < 9)
 		{
-		putchar(c);
-		putchar(i);
-	if (c != '8' || (c == '8' && i != '9'))
-	{
-	putchar(',');
-	putchar(' ');
+			putchar(' ; ');
+			putchar(' ');
+		}
 	}
-	i++;
-	}
-	c++;
-	}
+	putchar('\n');
 	return (0);
 }
