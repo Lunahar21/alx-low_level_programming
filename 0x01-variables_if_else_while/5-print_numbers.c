@@ -6,7 +6,7 @@
  *
  *Return: Always 0
  */
-int mani(void)
+int main(void)
 {
 	int a;
 
