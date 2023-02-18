@@ -2,22 +2,22 @@
 #include <stdlib.h>
 /**
  * main - entry point
- * print lower cases except e and q with putchar function
+ *Description print lower cases except e and q with putchar function
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int char = 'a';
+	int ch = 'a';
 
-	while (char <= 'z')
+	while (ch <= 'z')
 	{
-		if (char == 'e' || char == 'q')
+		if (ch == 'e' || ch == 'q')
 		{
-			char++;
+			ch++;
 		}
-		putchar(char);
-		char++;
+		putchar(ch);
+		ch++;
 	}
 	putchar('\n');
 	return (0);
