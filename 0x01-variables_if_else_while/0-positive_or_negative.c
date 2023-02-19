@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdiio>
+#include <stdio.h>
 /**
  * main - entry point
  * Description: prints  if a number is positive or negative or equals Zero.
