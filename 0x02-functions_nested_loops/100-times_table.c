@@ -2,7 +2,7 @@
 
 /**
  * print - times table - prints the n times table, starting with 0
- * @n: If n is > 15 or < 0  the function should not print anything
+ * @n:If n is greater than 15 or less than 0 the function should not print
  */
 void print_times_table(int n)
 {
