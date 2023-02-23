@@ -10,9 +10,9 @@ int _isupper(int c);
 {
 	char c;
 
-	for (c >= 'A' && c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 
 		return (1);
-		while
-			return (0)
+	else
+		return (0)
 }
