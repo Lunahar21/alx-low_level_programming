@@ -4,7 +4,7 @@
  * _isdigit - check if numbers are 0 - 9
  * @c: character to be checked
  *
- * Return: 1 for digit character or 0 otherwise
+ * Return: 1  or 0
  */
 
 int _isdigit(int c);
