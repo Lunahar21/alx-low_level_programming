@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print _numbers - numbers from 0 to 9
+ * print_numbers - numbers from 0 to 9
  *
  * Retuen: void
  */
