@@ -4,6 +4,7 @@
  *print_line - that draws a straight line
  *
  *@n:the number of times the character _ should be printed
+ *Return: void
  */
 
 void print_line(int n)
@@ -11,8 +12,7 @@ void print_line(int n)
 	if (n <= 0)
 	{
 		_putchar('\n');
-	}
-	else
+	}else
 	{
 		int i;
 
