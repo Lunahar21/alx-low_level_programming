@@ -1,11 +1,10 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_number - prints an integer
- * @n:.input integer parameter
- * 
- *
-*/
+ * @n: the intiger to print
+ * Return: Nothing
+ */
 
 void print_number(int n)
 {
@@ -13,14 +12,12 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		_putchar(45);
-		i = -i;
+	n == -1;
+	i = n;
+	_putchar('-');
 	}
-
-	if (i / 10)
-	{
-		print_number(i / 10);
-	}
-	_putchar(i % 10 + '0');
-
+	i /= 10;
+	if (i != 0)
+		print_number(i);
+		_putchar((unsigned int) n % 10 + '0');
 }
