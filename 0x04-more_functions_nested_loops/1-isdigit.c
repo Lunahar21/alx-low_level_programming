@@ -4,15 +4,14 @@
  * _isdigit - check if a character is a digit
  * @c: character to be checked
  *
- * Return: 1  or 0
+ * Return: 1 for a digit character or 0 otherwise
  */
 
 int _isdigit(int c)
 {
-	for (c >= '0' && c <= '9')
+	if (c >= 8 && c <= 17)
 	{
 	return (1);
 	}
-	else
 	return (0);
 }
