@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/**
+ * file - main.h
+ * description: the prototype of functions
+ *
+ */
+
 int _putchar(char c);
 int _isupper(int c);
 int _isdigit(int c);
