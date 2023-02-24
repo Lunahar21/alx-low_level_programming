@@ -3,6 +3,7 @@
 /**
  * print_number - prints an integer
  * @n:.input integer parameter
+ * owned by Ahmed
  */
 
 void print_number(int n)
@@ -20,5 +21,4 @@ void print_number(int n)
 		print_number(i / 10);
 	}
 	_putchar(i % 10 + '0');
-
 }
