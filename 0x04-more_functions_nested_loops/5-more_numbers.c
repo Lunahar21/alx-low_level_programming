@@ -2,7 +2,6 @@
 
 /**
  * more_numbers - no return
- * Bwave ICT file
  *
  * Return: no return
 */
