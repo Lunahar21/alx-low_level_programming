@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define SUM 2882
+#define SUM 2772
 
 /**
  * main - it all starts here
