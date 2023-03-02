@@ -9,20 +9,21 @@
 
 char *leet(char *sr)
 {
-	int index, j;
-	char lower[] = {'a', 'e', '0', 't', 'l', '\0'};
-	char upper[] = {'A', 'E', 'O', 'T', 'L', '\0'};
-	char numbs[] = {'4', '3', '0', '7', '1', '\0'};
+	int i, j;
+	char *ltr = "aAeEoOtTlL";
+	char *num = "4433007711";
 
-	for (index = 0; sr[index] != '\0'; index++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j < 5; j++)
+		for (j = 0; ltr[j] != '\0'; j++)
 		{
-			if (sr[index] == lower[j] || sr[indx] == upper[j])
+			if (str[i] == ltr[j])
 			{
-				sr[index] = numbs[j];
+				str[i] = num[j];
+				break;
 			}
 		}
 	}
-	return (sr);
+
+	return (str);
 }
