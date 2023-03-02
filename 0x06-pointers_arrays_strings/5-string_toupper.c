@@ -3,21 +3,20 @@
 /**
  * *string_toupper - a function that changes all lowercase letter to uppercase
  *
- * @lo: input string
+ * @n: input string
  * Return: lowercase to upercase
  */
 
-char *string_toupper(char *lo)
+char *string_toupper(char *n)
 {
 	int index;
-	int let = 'a' - 'A';
 
-	for (index = 0; lo[index] != '\0'; index++)
+	for (index = 0; n[index] != '\0'; index++)
 	{
-		if (lo[index] >= 'a' && lo[index] <= 'z')
-		{
-			lo[index] = lo[index] - let;
+		if (n[index] >= 'a' && n[index] <= 'z')
+		
+			n[index] = n[index] - 32;
+			index++;
 		}
-	}
 	return (let);
 }
