@@ -9,7 +9,7 @@
 
 char *string_toupper(char *lo)
 {
-	int index = 0;
+	int index;
 	int let = 'a' - 'A';
 
 	for (index = 0; lo[index] != '\0'; index++)
