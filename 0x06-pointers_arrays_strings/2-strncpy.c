@@ -6,7 +6,7 @@
  *@dest: string to be copied
  *@src: string to be compied
  *@n: input value
- * Return: dest
+ * Return: string with numbers of bytes
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -17,8 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[index] = src[index];
 	}
-	while (index < n)
-		index++
+	for (; index < n; index++)
 		{
 			dest[index] = '\0';
 		}
