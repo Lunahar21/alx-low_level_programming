@@ -12,10 +12,10 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack)
 	{
 		char *k = haystack;
-		char *n = needs;
+		char *n = needle;
 
 
-		while (*k == *n && *n != '\')
+		while (*k == *n && *n != '\0')
 		{
 			k++;
 			n+;
@@ -25,6 +25,7 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack);
 		}
 		haystack++;
+
 	}
 	return (0);
 }
