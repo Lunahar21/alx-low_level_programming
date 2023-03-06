@@ -9,18 +9,19 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
+	for (; *haystack != '\0'; haystack++)
 	{
-		char *k;
+		char *k = haystack;
+		char *m = needle
 
-		k = haystack;
-		while (*needle == *haystack)
+
+		while (*k == *m && *m != '\0')
 		{
-			haystack++, needle++;
+			k++;
+			m++;
 		}
-		if (*needle == '\0')
-			return (k);
-		haystack++;
+		if (*m == '\0')
+			return (haystack);
 	}
 	return (0);
 }
