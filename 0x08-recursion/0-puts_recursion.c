@@ -5,7 +5,7 @@
  *
  *@s: a string to be printed
  *
- *Return: string
+ *Return: void
  */
 void _puts_recursion(char *s)
 {
@@ -13,7 +13,7 @@ void _puts_recursion(char *s)
 
 	{
 	_pustchar(*s);
-	_putchar(s + 1);
+	_puts_recursion(s + 1);
 	}
 	else
 	{
