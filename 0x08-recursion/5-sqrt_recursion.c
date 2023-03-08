@@ -2,11 +2,11 @@
 /**
  *k_sqrt_recursion - a function that returns the natural square root
  *
- *@n: number that to be squered
+ *@p: number that equals to n of before function
  *@m: the sum
- *Return: squared result
+ *Return: the result
  */
-int k_sqrt_recursion(int n, int m)
+int k_sqrt_recursion(int p, int m)
 {
 		if (n == (m * m))
 			return  (m);
@@ -17,4 +17,15 @@ int k_sqrt_recursion(int n, int m)
 	else
 		return (k_sqrt_recursion(n, m + 1));
 }
-
+/**
+ *_sqrt_recursion - the first function
+ *@n: input value
+ *
+ *Return: squared result
+ */
+int _sqrt_recursion(int n)
+{
+	if (n <= 0)
+		return (-1);
+	return (k_sqrt_recursion(n, 0));
+}
