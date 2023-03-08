@@ -10,13 +10,14 @@
  */
 int _pow_recursion(int x, int y)
 {
-	if (y == 1)
+	int power = x;
 
-		return (x);
+	if (y < 0)
+		return (-1);
+	else if (y == 0)
+		return (1);
 
-	else if (n % 2 == 0)
+	power *= _pow_recursion(x, y - 1);
 
-		return (_pow_recursion(_pow_recursion(x, y / 2), 2));
-	else
-		return (x * _pow_recursion(x, y - 1));
+	return (power);
 }
