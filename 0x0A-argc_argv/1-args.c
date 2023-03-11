@@ -7,10 +7,8 @@
  *
  *Return: Always o (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__(unused))
 {
-	(void) argv; /*avoid argv*/
-
-	printf("%d\n", argc - 1);
+printf("%d\n", argc - 1);
 	return (0);
 }
