@@ -1,12 +1,12 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- *main - entry point
+ *main - a program that prints all arguments it receives
  *@argc: number of arguments (count)
  *@argv: array argument vector
  *
  *Return: 0
- *
  */
 int main(int argc, char *argv[])
 {
@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	for (count = 0; count < argc; count++)
 	{
 
-		printf("%d\n", argv[count]);
+		printf("%s\n", argv[count]);
 	}
 	return (0);
 }
