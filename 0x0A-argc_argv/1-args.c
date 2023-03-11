@@ -1,4 +1,4 @@
-#include <sydko.h>
+#include <stdio.h>
 #include "main.h"
 /**
  *main - entry point
@@ -7,8 +7,10 @@
  *
  *Return: Always 0 (success)
  */
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
 	printf("%d\n", argc - 1);
+	(void)argv;
+
 	return (0);
 }
