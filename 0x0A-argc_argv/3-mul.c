@@ -12,17 +12,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int index, multi;
+	int a, b, multi;
 
-	multi = 1;
-	if (argc < 3)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (index = 1; index < argc; index++)
-	{
-		multi = multi * atio(argv[index]);
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	multi = a * b;
 	}
 	printf("%d\n", multi);
 	return (0);
