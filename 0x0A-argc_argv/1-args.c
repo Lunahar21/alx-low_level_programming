@@ -5,11 +5,12 @@
  *@argc: number of arguments
  *@argv: array of arguments
  *
- *Return Always o (success)
+ *Return: Always o (success)
  */
 int main(int argc, char *argv[])
 {
-(void) argv; /*avoid argv*/
+	(void) argv; /*avoid argv*/
+
 	printf("%d\n", argc - 1);
 	return (0);
 }
