@@ -34,4 +34,27 @@ int min_coins(int cents, int coins[])
  * @argv: The array of arguments
  *
  * Return: 0 if successful, 1 if error
+ */
+int main(int argc, char *argv[])
+{
+	int cents;
+	int coins[] = {25, 10, 5, 2, 1};
 
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	cents = atoi(argv[1]);
+
+	if (cents < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	printf("%d\n", min_coins(cents, coins));
+
+	return (0);
+}
