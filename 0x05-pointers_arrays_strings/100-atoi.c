@@ -1,16 +1,5 @@
 #include "main.h"
 /**
- * _isdigit - checks if character is a digit
- * @s: the character to check
- *
- * Return: 1 if digit, 0 otherwise
- */
-int _isdigit(char s)
-{
-	return (s >= '0' && s <= '9');
-}
-
-/**
  * _atoi - converts string to integer
  * @s: the string
  *
