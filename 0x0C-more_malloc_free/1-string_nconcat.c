@@ -1,11 +1,12 @@
 #include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
+
 /**
- **string_nconcat -  a function that concatenates two strings
+ **string_nconcat - a function thatconcatenate 2 strings
  *@s1: destination string
- *@s2: copied string to s1
- *@n: size of copied sring s2
- *
+ *@s2: source string
+ *@n: size s2 copied to s1 string
  *Return: string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -27,9 +28,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (n > b)
 		n = b;
-	newString[a] = malloc(((a + n) + 1))
-		if (newString == NULL)
-			return (NULL);
+	newString = malloc(((a + n) + 1));
+	if (newString == NULL)
+		return (NULL);
 	for (a = 0; s1[a] != '\0'; a++)
 	{
 		newString[a] = s1[a];
@@ -39,6 +40,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		newString[a] = s2[b];
 		a++;
 	}
-	newString[a] = s2[b];
+	newString[a] = '\0';
 	return (newString);
 }
