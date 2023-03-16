@@ -22,9 +22,9 @@ int *array_range(int min, int max)
 	range = (int *) malloc(sizeof(int) * (max - min + 1));
 	if (range == NULL)
 		return (NULL);
-	for (i = 0; a <= (max - min); a++)
+	for (i = 0; i <= (max - min); i++)
 	{
-		range[a] = j;
+		range[i] = j;
 		j++;
 	}
 	return (range);
