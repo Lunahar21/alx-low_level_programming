@@ -3,19 +3,18 @@
 #include <stdlib.h>
 
 /**
- *print_dog - print a structure
- *@d: pointer containing the structure
+ * print_dog - Prints a struct dog.
+ * @d: a pointer to elements of declared struct dog.
  */
 void print_dog(struct dog *d)
 {
 	if (d == NULL)
 		return;
 
-	if (d->.name == NULL)
-		printf("Name: (nil)\");
+	if (d->name == NULL)
+		printf("Name: (nil)\n");
 	else
-		printf(Name: %s\n", d->name);
-
+		printf("Name: %s\n", d->name);
 
 	if (d->age < 0)
 		printf("Age: (nil)\n");
