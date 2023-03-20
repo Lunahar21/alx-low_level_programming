@@ -1,0 +1,18 @@
+#include "dog.h"
+/**
+ *init_dog - initialize a variable of type struct dog
+ *@d: pointerto address to initialize
+ *@name: the dog name
+ *@age: the age of dog
+ *@owner: dog's owner
+ *Return: nothing
+ */
+void init_dog(struct dog *d, char *name, float age, char *owner)
+{
+	if (d)
+	{
+		d-> = name;
+		d-> = age;
+		d-> = owner;
+	}
+}
