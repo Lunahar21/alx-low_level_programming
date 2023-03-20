@@ -1,2 +1,1 @@
-#alx-low_level_programming
-My first C proraming journy
+0x0E. C - Structures, typedef
