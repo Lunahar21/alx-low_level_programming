@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *_FILE_MACRO - program to print the name of source code file
- *
+ * main - C program to print the name of source code file
+ *Return: nothing
  */
-int _FILE_MACRO()
+int main(void)
 {
-	int _FILE_;
-	_putchar("main.c: %s\n", _FILE_);
+	printf("%s\n", _FILE_);
+	return (0);
 }
