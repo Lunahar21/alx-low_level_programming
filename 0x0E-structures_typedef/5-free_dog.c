@@ -1,8 +1,8 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- *free_dog - free the dogs
- *@d: pointer to the structs
+ *free_dog - free the new dogs
+ *@d: struct to be allocated
  *
  *Return: void
  */
