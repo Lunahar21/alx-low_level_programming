@@ -1,32 +1,34 @@
-#include "3-calc.h"
-#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
-*get_op_func - selects the correct function to perform
-*the operation asked by the user. You’re not allowed
-*to declare any other function.
-*@s: operator passed as argument
-*
-*Return: A pointer to the function corresponding to
-*the operator given in parameter
-*/
-int (*get_op_func(char *s))(int, int)
+ * int_index - searches for an integer
+ * @size: the size of an array
+ * @cmp: pointer to a function
+ * @array: the array
+ *
+ * Return: the index of the first element and returns -1 if no match found
+ */
+
+int int_index(int *array, int size, int (*cmp)(int))
 {
+	int index;
+	int i;
 
-op_t ops[] = {
-{"+", op_add},
-{"-", op_sub},
-{"*", op_mul},
-{"/", op_div},
-{"%", op_mod},
-{NULL, NULL}
-};
-int i = 0;
-
-while (ops[i].op != NULL && *(ops[i].op) != *s)
-i++;
-
-return (ops[i].f);
-
+	if (size <= 0)
+	{
+		return (-1);
+	}
+	if (array && cmp)
+	{
+		for (i = 0; i < size; i++)
+		{
+			index = cmp(array[i]);
+			if (index != 0)
+			{
+				return (i);
+			}
+		}
+	}
+	return (-1);
 }
 
