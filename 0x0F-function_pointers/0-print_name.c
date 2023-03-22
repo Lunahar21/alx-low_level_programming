@@ -6,7 +6,7 @@
  *@name: character string
  *
  *@f: function pointer which takesstring argument
- *
+ * Return: void
  */
 void print_name(char *name, void (*f)(char *));
 {
