@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *cleanup_Fun - function that print something before the main function excuted
+ *cleanupFun - function that print something before the main function excuted
  */
-void cleaup_Fun(void) __attribute__ ((constructor));
+void cleaupFun(void) __attribute__ ((constructor));
 
-void cleanup_Fun(void)
+void cleanupFun(void)
 {
 	printf("You're beat! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
