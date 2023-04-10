@@ -2,31 +2,46 @@
 /**
  *read_textfile - a function that reads a text file and prints
  *	it to the POSIX standard output
- *@file: the file we want to open
+ *@filename: the file we want to open
  *@letters: bytes to be read
  *
  *Return: the actual number of letters it could read and print
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd; char *buf;
-	int lenRead, lenWrite;
+	ssize_t open_file, read_count, write_count;
+	char *buffer;
 
 	if (filename == NULL)
 		return (0);
-	fd = open(filename, O_RDONLY);
-		if (fd == -1)
-			return (0);
-	buf = malloc(letters * sizeof(char));
 
-	if (buf == NULL)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
-	lenRead = read(fd, buf, letters);
 
-	lenRead = write(STDOUT_FILENO, buf, lenRead);
-	if (lenWrite != lenRead && lenWrite == -1)
+	open_file = open(filename, O_RDONLY);
+	if (open_file == -1)
+	{
+		free(buffer);
 		return (0);
-	free(buf);
-	close(fd);
-	return(lenRead);
+	}
+	read_count = read(open_file, buffer, letters);
+	if (read_count == -1)
+	{
+		free(buffer);
+		close(open_file);
+		return (0);
+	}
+	write_count = write(STDOUT_FILENO, buffer, read_count);
+	if (write_count == -1 || write_count != read_count)
+	{
+		free(buffer);
+		close(open_file);
+		return (0);
+	}
+
+	free(buffer);
+	close(open_file);
+
+	return (write_count);
 }
